@@ -26,13 +26,33 @@
 
 <script>
 function sayHello() {
-  alert("Hello, Reid!");
+  alert("Hello, World!");
 }
 </script>
 </body>
 </html>
 ```
-* Then, we'll take it up a notch and introduce variables.
+* Then, we'll take it up a notch and introduce arguments.
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Tutorial</title>
+</head>
+<body>
+<button type="button" onclick="sayHello('World')">Click me!</button>
+
+<script>
+function sayHello(x) {
+  var name = x;
+  alert("Hello, " + name + "!");
+}
+</script>
+</body>
+</html>
+```
+* But what if we want to ask them what their name is? We can add a prompt.
 ```html
 <!DOCTYPE html>
 <html lang="en-US">
@@ -97,26 +117,6 @@ function sayHello() {
 			alert("Hello, " + name + "!");
 		}
 	}
-}
-</script>
-</body>
-</html>
-```
-* Then, we'll take it up another notch and introduce arguments to replace the prompt.
-```html
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <title>Javascript Tutorial</title>
-</head>
-<body>
-<button type="button" onclick="sayHello('Reid')">Click me!</button>
-
-<script>
-function sayHello(x) {
-  var name = x;
-  alert("Hello, " + name + "!");
 }
 </script>
 </body>
