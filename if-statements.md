@@ -52,3 +52,16 @@ if (!(y == 5)) {
   // do this
 }
 ```
+
+## Nesting If Statements
+
+If statements can be nested within other `if`, `else if`, and `else` statements  
+Example:
+```javascript
+if (m == 4) {
+  // if m is equal to 4 and x can be anything, do this
+  if (x == 6) {
+    // if m is equal to 4 and x is equal to 6, do this
+  }
+}
+```
