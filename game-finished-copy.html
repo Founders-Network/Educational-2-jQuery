@@ -119,7 +119,11 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			var name = prompt("What's your name?");
+			var name;
+
+			do{
+				name = prompt("What's your name?");
+			}while(name == "");
 			$('.user-name').html(name);
 			
 			$('.controls button').on('click', function(){
@@ -147,7 +151,7 @@
 					$('.computer-hand').addClass('bounce');
 					$('body').css('background-color', '#F9B7A7');
 				} else {
-					$('body').css('background-color', '#F9C7A7');
+					$('body').css('background-color', '#F9F1A7');
 				}
 			});
 		});
