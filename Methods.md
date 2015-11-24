@@ -13,6 +13,10 @@
 `.attr` *get the value of an attribute <br>*
 `.css` *sets or returns one or more style properties*
 
+######Math Object
+ &nbsp; &nbsp; `Math.floor()` *rounds a number down to the nearest integer*
+ &nbsp; &nbsp; `Math.random()` *returns a random number between 0 and 1*
+
 
 
 
