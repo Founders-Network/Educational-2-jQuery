@@ -2,7 +2,7 @@
 
 `$(selector).action ()` <br>
 &nbsp; &nbsp; &nbsp; &nbsp;*`$` accesses JQuery* 
-*`(selector)` used to find HTML elements *
+*`(selector)` used to find HTML elements*
 *`.action()` applies action to the elements <br>*
 `$(document).ready(function()`
 *prevents any code from running before document has loaded <br>*
