@@ -1,4 +1,4 @@
-#### List of Useful Methods
+### List of Useful Methods
 
 `$(selector).action ()` <br>
 &nbsp; &nbsp; &nbsp; &nbsp;*`$` accesses JQuery* 
@@ -14,7 +14,7 @@
 `.css` *sets or returns one or more style properties*
 
 ######Math Object
- &nbsp; &nbsp; `Math.floor()` *rounds a number down to the nearest integer*
+ &nbsp; &nbsp; `Math.floor()` *rounds a number down to the nearest integer* <br>
  &nbsp; &nbsp; `Math.random()` *returns a random number between 0 and 1*
 
 
