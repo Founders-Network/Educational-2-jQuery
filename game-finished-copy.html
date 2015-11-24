@@ -120,10 +120,11 @@
 	<script>
 		$(document).ready(function(){
 			var name;
-
+			//checks that the user name is not empty 
 			do{
 				name = prompt("What's your name?");
 			}while(name == "");
+			
 			$('.user-name').html(name);
 			
 			$('.controls button').on('click', function(){
