@@ -17,5 +17,12 @@ The `return` statement indicates the end of the function.
 Functions usually compute a value which is returned to the "caller".  
 In this case, `x` will have a value of 9.
 
+Functions allow us to basically reuse a block of code to perform a specific task, but also allow us the felxibility to change the parameters around when calling them with arguments. This prevents us from having to rewrite the same code over and over again. 
+
+We are also allowed to use function in equations, just like variables. For example, let's take the "calculateSum" function:
+```javascript
+var z = 5;
+var y = calculateSum(3,6) + calculateSum(1,2) + 1 - y; 
+```
 
 
