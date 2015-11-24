@@ -1,0 +1,124 @@
+# Variables
+
+* We will provide an HTML file:
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Tutorial</title>
+</head>
+<body>
+<button type="button">Click me!</button>
+</body>
+</html>
+```
+* We will add an `onlclick` event to the button and add the function between script tags in the body:
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Tutorial</title>
+</head>
+<body>
+<button type="button" onclick="sayHello()">Click me!</button>
+
+<script>
+function sayHello() {
+  alert("Hello, World!");
+}
+</script>
+</body>
+</html>
+```
+* Then, we'll take it up a notch and introduce arguments.
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Tutorial</title>
+</head>
+<body>
+<button type="button" onclick="sayHello('World')">Click me!</button>
+
+<script>
+function sayHello(x) {
+  var name = x;
+  alert("Hello, " + name + "!");
+}
+</script>
+</body>
+</html>
+```
+* But what if we want to ask them what their name is? We can add a prompt.
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Tutorial</title>
+</head>
+<body>
+<button type="button" onclick="sayHello()">Click me!</button>
+
+<script>
+function sayHello() {
+  var name = prompt("Please enter your name");
+  alert("Hello, " + name + "!");
+}
+</script>
+</body>
+</html>
+```
+* Since pressing Cancel results in the alert saying "Hello, null!" we can include an if statement:
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Tutorial</title>
+</head>
+<body>
+<button type="button" onclick="sayHello()">Click me!</button>
+
+<script>
+function sayHello() {
+  var name = prompt("Please enter your name");
+  if (name != null) {
+    alert("Hello, " + name + "!");
+  }
+}
+</script>
+</body>
+</html>
+```
+* Addition of the confirm() option:
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript Tutorial</title>
+</head>
+<body>
+<button type="button" onclick="sayHello()">Click me!</button>
+
+<script>
+function sayHello() {
+	var cancelled = false;
+	while(cancelled == false) {
+		var name = prompt("Please enter name: ");
+		if (name == "" || name == null) {
+			cancelled = confirm("Are you sure you do not want to enter your name?");
+		} else {
+			cancelled = true;
+			alert("Hello, " + name + "!");
+		}
+	}
+}
+</script>
+</body>
+</html>
+```
